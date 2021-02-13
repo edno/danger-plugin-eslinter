@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": true,
+    "lib": ["es2017"],
+    "types": ["node", "jest"]
+  },
+  "include": ["src/**/*.ts"]
+}

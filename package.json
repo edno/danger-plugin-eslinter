@@ -19,38 +19,41 @@
     "eslint"
   ],
   "version": "0.0.0-development",
+  "type": "module",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "precommit": "lint-staged",
+    "build": "tsc -b tsconfig.json",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
-    "build": "tsc",
-    "test": "jest",
-    "predocs": "rm -rf docs/",
+    "danger": "danger local --base main --text-only --failOnErrors --dangerfile dangerfile.ts",
     "docs": "esdoc -c .esdoc.json",
+    "lint": "eslint --cache --fix '**/*.ts'",
+    "test": "jest --outputFile test-results.json --json",
+    "predocs": "rm -rf docs/",
+    "precommit": "lint-staged",
     "prepublish": "yarn build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "prettier": "yarn prettier --write 'src/**/*.{ts,tsx}'",
-    "lint": "eslint --cache --fix ''src/**/*.ts''"
+    "prettier": "prettier --write '**/*.{js,ts,json,md}'",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "license": "MIT",
   "engines": {
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.6",
+    "@types/diff": "5.0.0",
+    "@types/eslint": "7.2.6",
     "@types/jest": "26.0.20",
-    "@types/node": "^14.14.27",
-    "@types/prettier": "^2.2.1",
+    "@types/node": "14.14.27",
+    "@types/prettier": "2.2.1",
     "@typescript-eslint/eslint-plugin": "4.15.0",
     "@typescript-eslint/parser": "4.15.0",
     "commitizen": "4.2.3",
     "cz-conventional-changelog": "3.3.0",
     "danger": "*",
+    "danger-plugin-jest": "^1.3.0",
     "danger-plugin-yarn": "^1.3.2",
     "eslint": "7.20.0",
-    "eslint-config-google": "0.14.0",
     "husky": "5.0.9",
     "jest": "26.6.3",
     "lint-staged": "10.5.4",
@@ -68,26 +71,34 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.@(ts|tsx)": [
+    "*.ts": [
       "eslint --fix",
       "prettier --write",
       "git add"
     ]
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/test/**/*.test.ts"
     ],
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(.test)\\.(ts|tsx)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/"
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.ts"
     ]
+  },
+  "peerDependencies": {
+    "danger": "*",
+    "eslint": "*"
+  },
+  "dependencies": {
+    "@octokit/core": "3.2.5",
+    "diff": "5.0.0"
   }
 }

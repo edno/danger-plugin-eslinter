@@ -37,6 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@octokit/core", "npm:3.2.5"],
+            ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.27"],
@@ -46,10 +48,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["danger", "npm:10.6.2"],
+            ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
+            ["diff", "npm:5.0.0"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
             ["husky", "npm:5.0.9"],
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
@@ -714,10 +717,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@istanbuljs/schema", [
-        ["npm:0.1.2", {
-          "packageLocation": "./.yarn/cache/@istanbuljs-schema-npm-0.1.2-cec4e49c8d-ebc6bd5f14.zip/node_modules/@istanbuljs/schema/",
+        ["npm:0.1.3", {
+          "packageLocation": "./.yarn/cache/@istanbuljs-schema-npm-0.1.3-466bd3eaaa-d84c326335.zip/node_modules/@istanbuljs/schema/",
           "packageDependencies": [
-            ["@istanbuljs/schema", "npm:0.1.2"]
+            ["@istanbuljs/schema", "npm:0.1.3"]
           ],
           "linkType": "HARD",
         }]
@@ -1420,6 +1423,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/babel__traverse", "npm:7.11.0"],
             ["@babel/types", "npm:7.12.13"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/diff", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/@types-diff-npm-5.0.0-aa56fd41c5-ee1edc35cb.zip/node_modules/@types/diff/",
+          "packageDependencies": [
+            ["@types/diff", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -2387,7 +2399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-istanbul", "npm:6.0.0"],
             ["@babel/helper-plugin-utils", "npm:7.12.13"],
             ["@istanbuljs/load-nyc-config", "npm:1.1.0"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["istanbul-lib-instrument", "npm:4.0.3"],
             ["test-exclude", "npm:6.0.0"]
           ],
@@ -3780,6 +3792,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["danger-plugin-eslinter", "workspace:."],
+            ["@octokit/core", "npm:3.2.5"],
+            ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.27"],
@@ -3789,10 +3803,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["danger", "npm:10.6.2"],
+            ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
+            ["diff", "npm:5.0.0"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
             ["husky", "npm:5.0.9"],
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
@@ -3803,6 +3818,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["validate-commit-msg", "npm:2.14.0"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["danger-plugin-jest", [
+        ["npm:1.3.0", {
+          "packageLocation": "./.yarn/cache/danger-plugin-jest-npm-1.3.0-61b5f6c864-916c358045.zip/node_modules/danger-plugin-jest/",
+          "packageDependencies": [
+            ["danger-plugin-jest", "npm:1.3.0"],
+            ["strip-ansi", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["danger-plugin-yarn", [
@@ -4167,6 +4192,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dezalgo", "npm:1.0.3"],
             ["asap", "npm:2.0.6"],
             ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["diff", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/diff-npm-5.0.0-ad6900db18-ef241d3b20.zip/node_modules/diff/",
+          "packageDependencies": [
+            ["diff", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -4664,28 +4698,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["table", "npm:6.0.7"],
             ["text-table", "npm:0.2.0"],
             ["v8-compile-cache", "npm:2.2.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["eslint-config-google", [
-        ["npm:0.14.0", {
-          "packageLocation": "./.yarn/cache/eslint-config-google-npm-0.14.0-a22cecef0b-b1cb79fc4a.zip/node_modules/eslint-config-google/",
-          "packageDependencies": [
-            ["eslint-config-google", "npm:0.14.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-google-virtual-afeb1d244b/0/cache/eslint-config-google-npm-0.14.0-a22cecef0b-b1cb79fc4a.zip/node_modules/eslint-config-google/",
-          "packageDependencies": [
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
-            ["@types/eslint", "npm:7.2.6"],
-            ["eslint", "npm:7.20.0"]
-          ],
-          "packagePeers": [
-            "@types/eslint",
-            "eslint"
           ],
           "linkType": "HARD",
         }]
@@ -5821,7 +5833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"],
             ["neo-async", "npm:2.6.2"],
             ["source-map", "npm:0.6.1"],
-            ["uglify-js", "npm:3.12.7"],
+            ["uglify-js", "npm:3.12.8"],
             ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD",
@@ -6951,7 +6963,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["istanbul-lib-instrument", "npm:4.0.3"],
             ["@babel/core", "npm:7.12.16"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["istanbul-lib-coverage", "npm:3.0.0"],
             ["semver", "npm:6.3.0"]
           ],
@@ -12376,7 +12388,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/test-exclude-npm-6.0.0-3fb03d69df-68294d1006.zip/node_modules/test-exclude/",
           "packageDependencies": [
             ["test-exclude", "npm:6.0.0"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["glob", "npm:7.1.6"],
             ["minimatch", "npm:3.0.4"]
           ],
@@ -12809,10 +12821,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["uglify-js", [
-        ["npm:3.12.7", {
-          "packageLocation": "./.yarn/cache/uglify-js-npm-3.12.7-34899a65ba-32ec37dcf7.zip/node_modules/uglify-js/",
+        ["npm:3.12.8", {
+          "packageLocation": "./.yarn/cache/uglify-js-npm-3.12.8-48cfdbfaed-d54713d9a5.zip/node_modules/uglify-js/",
           "packageDependencies": [
-            ["uglify-js", "npm:3.12.7"]
+            ["uglify-js", "npm:3.12.8"]
           ],
           "linkType": "HARD",
         }]
