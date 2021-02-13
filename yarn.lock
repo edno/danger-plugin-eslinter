@@ -482,9 +482,9 @@ __metadata:
   linkType: hard
 
 "@istanbuljs/schema@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@istanbuljs/schema@npm:0.1.2"
-  checksum: ebc6bd5f14aca7dd229d3e03aaab47c4c9a1ae25c892d6370d786c7a06128b4e03f60b31b10408010b701e1982087c1e2dae798e66cb57b44c7883228693f8e4
+  version: 0.1.3
+  resolution: "@istanbuljs/schema@npm:0.1.3"
+  checksum: d84c326335c37e3bd963e51d0e9631153961ff695524b1722317c9991f5153da283f819beab84a079695e2da8b3740e84c81db47c361cf12fff575968145d662
   languageName: node
   linkType: hard
 
@@ -719,7 +719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^3.2.3":
+"@octokit/core@npm:3.2.5, @octokit/core@npm:^3.2.3":
   version: 3.2.5
   resolution: "@octokit/core@npm:3.2.5"
   dependencies:
@@ -3071,6 +3071,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "danger-plugin-eslinter@workspace:."
   dependencies:
+    "@octokit/core": 3.2.5
     "@types/diff": 5.0.0
     "@types/eslint": 7.2.6
     "@types/jest": 26.0.20
@@ -11233,11 +11234,11 @@ typescript@4.1.5:
   linkType: hard
 
 "uglify-js@npm:^3.1.4":
-  version: 3.12.7
-  resolution: "uglify-js@npm:3.12.7"
+  version: 3.12.8
+  resolution: "uglify-js@npm:3.12.8"
   bin:
     uglifyjs: bin/uglifyjs
-  checksum: 32ec37dcf71990dafdbd56c87948a888cdc162617b173d512ab7746cbdbb4e2b0ee1c59b6c5adabcee85194fbe3c43b07aedbbb0a8df63cb7de74455d8443a4c
+  checksum: d54713d9a5fef62300ea1fc120dcb07f196f86b2974826e3ee11be2235f5add44d08ee857a8325e9d2afcc68d7bda5b59b5b16338a2a588b36245e1849709d76
   languageName: node
   linkType: hard
 

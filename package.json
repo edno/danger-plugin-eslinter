@@ -98,6 +98,7 @@
     "eslint": "*"
   },
   "dependencies": {
+    "@octokit/core": "3.2.5",
     "diff": "5.0.0"
   }
 }

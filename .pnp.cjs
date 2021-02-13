@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@octokit/core", "npm:3.2.5"],
             ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
@@ -716,10 +717,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@istanbuljs/schema", [
-        ["npm:0.1.2", {
-          "packageLocation": "./.yarn/cache/@istanbuljs-schema-npm-0.1.2-cec4e49c8d-ebc6bd5f14.zip/node_modules/@istanbuljs/schema/",
+        ["npm:0.1.3", {
+          "packageLocation": "./.yarn/cache/@istanbuljs-schema-npm-0.1.3-466bd3eaaa-d84c326335.zip/node_modules/@istanbuljs/schema/",
           "packageDependencies": [
-            ["@istanbuljs/schema", "npm:0.1.2"]
+            ["@istanbuljs/schema", "npm:0.1.3"]
           ],
           "linkType": "HARD",
         }]
@@ -2398,7 +2399,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-istanbul", "npm:6.0.0"],
             ["@babel/helper-plugin-utils", "npm:7.12.13"],
             ["@istanbuljs/load-nyc-config", "npm:1.1.0"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["istanbul-lib-instrument", "npm:4.0.3"],
             ["test-exclude", "npm:6.0.0"]
           ],
@@ -3791,6 +3792,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["danger-plugin-eslinter", "workspace:."],
+            ["@octokit/core", "npm:3.2.5"],
             ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
@@ -5831,7 +5833,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"],
             ["neo-async", "npm:2.6.2"],
             ["source-map", "npm:0.6.1"],
-            ["uglify-js", "npm:3.12.7"],
+            ["uglify-js", "npm:3.12.8"],
             ["wordwrap", "npm:1.0.0"]
           ],
           "linkType": "HARD",
@@ -6961,7 +6963,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["istanbul-lib-instrument", "npm:4.0.3"],
             ["@babel/core", "npm:7.12.16"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["istanbul-lib-coverage", "npm:3.0.0"],
             ["semver", "npm:6.3.0"]
           ],
@@ -12386,7 +12388,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/test-exclude-npm-6.0.0-3fb03d69df-68294d1006.zip/node_modules/test-exclude/",
           "packageDependencies": [
             ["test-exclude", "npm:6.0.0"],
-            ["@istanbuljs/schema", "npm:0.1.2"],
+            ["@istanbuljs/schema", "npm:0.1.3"],
             ["glob", "npm:7.1.6"],
             ["minimatch", "npm:3.0.4"]
           ],
@@ -12819,10 +12821,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["uglify-js", [
-        ["npm:3.12.7", {
-          "packageLocation": "./.yarn/cache/uglify-js-npm-3.12.7-34899a65ba-32ec37dcf7.zip/node_modules/uglify-js/",
+        ["npm:3.12.8", {
+          "packageLocation": "./.yarn/cache/uglify-js-npm-3.12.8-48cfdbfaed-d54713d9a5.zip/node_modules/uglify-js/",
           "packageDependencies": [
-            ["uglify-js", "npm:3.12.7"]
+            ["uglify-js", "npm:3.12.8"]
           ],
           "linkType": "HARD",
         }]
