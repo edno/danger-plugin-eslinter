@@ -46,6 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["danger", "npm:10.6.2"],
+            ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
@@ -3789,6 +3790,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["commitizen", "npm:4.2.3"],
             ["cz-conventional-changelog", "npm:3.3.0"],
             ["danger", "npm:10.6.2"],
+            ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
@@ -3803,6 +3805,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["validate-commit-msg", "npm:2.14.0"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["danger-plugin-jest", [
+        ["npm:1.3.0", {
+          "packageLocation": "./.yarn/cache/danger-plugin-jest-npm-1.3.0-61b5f6c864-916c358045.zip/node_modules/danger-plugin-jest/",
+          "packageDependencies": [
+            ["danger-plugin-jest", "npm:1.3.0"],
+            ["strip-ansi", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["danger-plugin-yarn", [

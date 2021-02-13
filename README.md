@@ -18,10 +18,11 @@ At a glance:
 
 ```js
 // dangerfile.js
-import eslinter from 'danger-plugin-eslinter'
+import eslinter from "danger-plugin-eslinter";
 
-eslinter()
+eslinter();
 ```
+
 ## Changelog
 
 See the GitHub [release history](https://github.com/edno/danger-plugin-eslinter/releases).
