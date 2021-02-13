@@ -6,7 +6,7 @@ import jest from "danger-plugin-jest";
 import eslinter from "./src";
 
 schedule(async () => {
-    yarn();
-    eslinter();
-    jest();
+  yarn();
+  eslinter();
+  jest();
 });

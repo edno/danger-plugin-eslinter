@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.27"],
@@ -48,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["danger", "npm:10.6.2"],
             ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
+            ["diff", "npm:5.0.0"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
             ["husky", "npm:5.0.9"],
@@ -1420,6 +1422,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/babel__traverse", "npm:7.11.0"],
             ["@babel/types", "npm:7.12.13"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/diff", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/@types-diff-npm-5.0.0-aa56fd41c5-ee1edc35cb.zip/node_modules/@types/diff/",
+          "packageDependencies": [
+            ["@types/diff", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -3780,6 +3791,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["danger-plugin-eslinter", "workspace:."],
+            ["@types/diff", "npm:5.0.0"],
             ["@types/eslint", "npm:7.2.6"],
             ["@types/jest", "npm:26.0.20"],
             ["@types/node", "npm:14.14.27"],
@@ -3791,6 +3803,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["danger", "npm:10.6.2"],
             ["danger-plugin-jest", "npm:1.3.0"],
             ["danger-plugin-yarn", "npm:1.3.2"],
+            ["diff", "npm:5.0.0"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
             ["husky", "npm:5.0.9"],
@@ -4177,6 +4190,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dezalgo", "npm:1.0.3"],
             ["asap", "npm:2.0.6"],
             ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["diff", [
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/diff-npm-5.0.0-ad6900db18-ef241d3b20.zip/node_modules/diff/",
+          "packageDependencies": [
+            ["diff", "npm:5.0.0"]
           ],
           "linkType": "HARD",
         }]
