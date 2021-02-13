@@ -1065,7 +1065,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:^7.2.6":
+"@types/eslint@npm:7.2.6":
   version: 7.2.6
   resolution: "@types/eslint@npm:7.2.6"
   dependencies:
@@ -1149,7 +1149,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>= 8, @types/node@npm:^14.14.27":
+"@types/node@npm:*, @types/node@npm:14.14.27, @types/node@npm:>= 8":
   version: 14.14.27
   resolution: "@types/node@npm:14.14.27"
   checksum: efc78cf6e698e09925a2542bbea932dfe092408f4ce39b8f260b71df502221d76c925fd3227bc1f7427edd9cfb6f8c81c68a56b9ab690f08425e7e6e177e61e0
@@ -1170,7 +1170,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^2.0.0, @types/prettier@npm:^2.2.1":
+"@types/prettier@npm:2.2.1, @types/prettier@npm:^2.0.0":
   version: 2.2.1
   resolution: "@types/prettier@npm:2.2.1"
   checksum: 9dc257dfc51eab6bc1e9ce58df94b309a206b2cdc6768709de3d20f70ae545c616bbc46add6d66f66cfa6cfbb0613dd09e6b6028ff6ff8ba9d3625f38d85cc66
@@ -3064,10 +3064,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "danger-plugin-eslinter@workspace:."
   dependencies:
-    "@types/eslint": ^7.2.6
+    "@types/eslint": 7.2.6
     "@types/jest": 26.0.20
-    "@types/node": ^14.14.27
-    "@types/prettier": ^2.2.1
+    "@types/node": 14.14.27
+    "@types/prettier": 2.2.1
     "@typescript-eslint/eslint-plugin": 4.15.0
     "@typescript-eslint/parser": 4.15.0
     commitizen: 4.2.3

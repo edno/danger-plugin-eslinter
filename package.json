@@ -22,27 +22,28 @@
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
-    "precommit": "lint-staged",
+    "build": "tsc",
     "commit": "git-cz",
     "commitmsg": "validate-commit-msg",
-    "build": "tsc",
+    "danger": "danger local --base main",
+    "docs": "esdoc -c .esdoc.json",
+    "lint": "eslint --cache --fix ''src/**/*.ts''",
     "test": "jest",
     "predocs": "rm -rf docs/",
-    "docs": "esdoc -c .esdoc.json",
+    "precommit": "lint-staged",
     "prepublish": "yarn build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prettier": "yarn prettier --write 'src/**/*.{ts,tsx}'",
-    "lint": "eslint --cache --fix ''src/**/*.ts''"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "license": "MIT",
   "engines": {
     "node": ">=4.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "^7.2.6",
+    "@types/eslint": "7.2.6",
     "@types/jest": "26.0.20",
-    "@types/node": "^14.14.27",
-    "@types/prettier": "^2.2.1",
+    "@types/node": "14.14.27",
+    "@types/prettier": "2.2.1",
     "@typescript-eslint/eslint-plugin": "4.15.0",
     "@typescript-eslint/parser": "4.15.0",
     "commitizen": "4.2.3",
