@@ -50,7 +50,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["danger-plugin-yarn", "npm:1.3.2"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
             ["husky", "npm:5.0.9"],
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
@@ -3794,7 +3793,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["danger-plugin-yarn", "npm:1.3.2"],
             ["esdoc", "npm:1.1.0"],
             ["eslint", "npm:7.20.0"],
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
             ["husky", "npm:5.0.9"],
             ["jest", "npm:26.6.3"],
             ["lint-staged", "npm:10.5.4"],
@@ -4676,28 +4674,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["table", "npm:6.0.7"],
             ["text-table", "npm:0.2.0"],
             ["v8-compile-cache", "npm:2.2.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["eslint-config-google", [
-        ["npm:0.14.0", {
-          "packageLocation": "./.yarn/cache/eslint-config-google-npm-0.14.0-a22cecef0b-b1cb79fc4a.zip/node_modules/eslint-config-google/",
-          "packageDependencies": [
-            ["eslint-config-google", "npm:0.14.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0", {
-          "packageLocation": "./.yarn/$$virtual/eslint-config-google-virtual-afeb1d244b/0/cache/eslint-config-google-npm-0.14.0-a22cecef0b-b1cb79fc4a.zip/node_modules/eslint-config-google/",
-          "packageDependencies": [
-            ["eslint-config-google", "virtual:e46d294d6e14c49c15ce0dddaf6bdabd185d20e4e719cd5c6d3c697aabc731991f07449114eb10022c04624d44c3c494ee451d367838dd0bd51258356900889a#npm:0.14.0"],
-            ["@types/eslint", "npm:7.2.6"],
-            ["eslint", "npm:7.20.0"]
-          ],
-          "packagePeers": [
-            "@types/eslint",
-            "eslint"
           ],
           "linkType": "HARD",
         }]
