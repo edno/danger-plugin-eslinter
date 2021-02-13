@@ -1,4 +1,4 @@
-import eslinter from "./index";
+import eslinter from "../src";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 declare const global: any;
