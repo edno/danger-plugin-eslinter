@@ -1,34 +1,34 @@
 // Provides dev-time type structures for  `danger` - doesn't affect runtime.
-import { DangerDSLType } from "DangerDSL";
+import { DangerDSLType } from "danger";
 declare let danger: DangerDSLType;
 export declare function message(message: string): void;
 export declare function warn(message: string): void;
 export declare function fail(message: string): void;
 export declare function markdown(message: string): void;
 
-import { CLIEngine } from "eslint";
+import { ESLint } from "eslint";
 
 /**
  * Better eslint plugin for DangerJS
  */
-export default function eslinter() {
-  const filesToLint = danger.git.created_files.concat(danger.git.modified_files)
-  const cli = new CLIEngine({ baseConfig: config })
-  return Promise.all(filesToLint.map(f => lintFile(cli, config, f)))
+export default async function eslinter(options?: ESLint.Options): Promise<any> {
+    const filesToLint: string[] = await danger.git.created_files.concat(danger.git.modified_files);
+    const linter: ESLint = new ESLint(options);
+    return Promise.all(filesToLint.map((file) => lintFile(linter, file)));
 }
 
-async function lintFile(linter, config, path) {
-  const contents = await danger.github.utils.fileContents(path)
-  const report = linter.executeOnText(contents, path)
+async function lintFile(linter: ESLint, filePath: string): Promise<any> {
+    const code: string = await danger?.github?.utils?.fileContents(filePath);
+    const [result]: ESLint.LintResult[] = await linter?.lintText(code || "", { filePath });
 
-  report.results[0].messages.map(msg => {
-    if (msg.fatal) {
-      fail(`Fatal error linting ${path} with eslint.`)
-      return
-    }
+    return result?.messages?.map((msg) => {
+        if (msg.fatal) {
+            fail(`Fatal error linting ${filePath} with eslint.`);
+            return;
+        }
 
-    const fn = { 1: warn, 2: fail }[msg.severity]
+        const fn = { 1: warn, 2: fail }[msg.severity];
 
-    fn(`${path} line ${msg.line} – ${msg.message} (${msg.ruleId})`)
-  })
+        fn(`${filePath} line ${msg.line} – ${msg.message} (${msg.ruleId})`);
+    });
 }

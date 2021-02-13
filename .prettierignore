@@ -1,2 +1,4 @@
 .yarn/
 .vscode/
+
+test-results.json

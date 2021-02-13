@@ -29,7 +29,7 @@
     "danger": "danger local --base main --text-only --failOnErrors --dangerfile dangerfile.ts",
     "docs": "esdoc -c .esdoc.json",
     "lint": "eslint --cache --fix '**/*.ts'",
-    "test": "jest",
+    "test": "jest --outputFile test-results.json --json",
     "predocs": "rm -rf docs/",
     "precommit": "lint-staged",
     "prepublish": "yarn build",
@@ -83,17 +83,13 @@
     ]
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "js"
+    "testEnvironment": "node",
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/src/**/*.test.ts"
     ],
-    "transform": {
-      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(.test)\\.(ts|tsx)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/"
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.ts"
     ]
   },
   "peerDependencies": {
